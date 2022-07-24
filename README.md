@@ -22,7 +22,7 @@ Successive halving begins by estimating all models in the parameter grid on a ti
 
 Initially, I did not utilise successive halving, and evaluating 200 candidate models (with 5 cross validation folds) from the first randomized search took approximately 2 hours and 10 minutes on an Intel i7-8700k at 100% usage. 
 
-When implementing successive halving, I was able to evaluate 768 candidate models (again with 5 fold cv) in 15 minutes at 100% usage. That means that successive halving is nearly 9 times faster. With this significant reduction in computation time, you do not have to trade accuracy for speed as much. This ensures you are getting the best (or very close!) model. 
+When implementing successive halving, I was able to evaluate 768 candidate models (again with 5 fold cv) in 15 minutes at 100% usage. That means that successive halving is nearly 36 times faster. With this significant reduction in computation time, you do not have to trade accuracy for speed as much. This ensures you are getting the best (or very close!) model. 
 
 ### GPU Usage:
 My GPU (GTX 1080) offered no performance enhacements over the CPU, and was actually much slower. I think there are two reasons for this:
