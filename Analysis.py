@@ -58,7 +58,7 @@ cv_results = cv_results.sort_values(by='rank_test_score')
 
 # Fitting the optimal model from the search:
 best_parameters = clf.best_params_
-boost_best = xgb.XGBRegressor(seed=seed, **prev_best_params)
+boost_best = xgb.XGBRegressor(seed=seed, **best_parameters)
 boost_best.fit(train_features, train_labels)
 
 xgb.plot_importance(boost_best, max_num_features=10)
