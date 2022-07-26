@@ -11,7 +11,7 @@ The optimal model had a mean absolute error (MAE) of $16,810.36. The mean price 
 ### Feature Importance:
 ![feature_importance](https://user-images.githubusercontent.com/52394699/181067188-df11fd5c-45a8-4802-877b-302c479449b5.png)
 
-Lot size and structure size were the most important featuers, followed by several distance measures (to downtown and LRT stations). Interestingly, the Valley Line West was more important, despite only being in the annoucement phase during this year. Both neighbourhood crime measures were relatively unimportant, but since we controlled for neighbourhoods through dummies, and included neighbourhood crime, then this crime measure is more or less the true effect of neighbourhood crime, everything else constant. 
+Lot size and structure size were the most important featuers, followed by several distance measures (to downtown and LRT stations). Interestingly, the Valley Line West was more important than Valley Line SE, despite only being in the annoucement phase during this year (compared to SE's construction phase). Both neighbourhood crime measures were relatively unimportant, but since we controlled for neighbourhoods through dummies, and included neighbourhood crime, then this crime measure is more or less the true effect of neighbourhood crime, everything else constant. 
 
 
 ## Hyperparameter Tuning:
